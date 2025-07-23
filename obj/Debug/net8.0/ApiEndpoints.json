@@ -1,0 +1,655 @@
+[
+  {
+    "ContainingType": "ApiUniRoom.Controllers.AccessController",
+    "Method": "Login",
+    "RelativePath": "api/Access/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ApiUniRoom.Models.LoginController",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ApiUniRoom.Models.LoginResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ApiUniRoom.Controllers.AccessController",
+    "Method": "RegistrarUsuario",
+    "RelativePath": "api/Access/registro",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ApiUniRoom.Models.RegistroRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ApiUniRoom.Models.RegistroResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ApiUniRoom.Controllers.ComentariosController",
+    "Method": "InsertarComentario",
+    "RelativePath": "api/Comentarios/InsertarComentario",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "comentario",
+        "Type": "ApiUniRoom.Models.Comentario",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiUniRoom.Controllers.ComentariosController",
+    "Method": "ListarComentarios",
+    "RelativePath": "api/Comentarios/ListaComentarios",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idUser",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "tipoUser",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiUniRoom.Controllers.ComentariosController",
+    "Method": "ResponderComentario",
+    "RelativePath": "api/Comentarios/ResponderComentario",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "ApiUniRoom.Models.RespuestaComentarioDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiUniRoom.Controllers.PagosController",
+    "Method": "ActualizarMontoAbono",
+    "RelativePath": "api/Pagos/ActualizarMontoAbono",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdAbono",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "MontoAbonado",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiUniRoom.Controllers.PagosController",
+    "Method": "EliminarTodosAbonos",
+    "RelativePath": "api/Pagos/EliminarAbono/{idPago}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idPago",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiUniRoom.Controllers.PagosController",
+    "Method": "EliminarPago",
+    "RelativePath": "api/Pagos/EliminarPago/{idPago}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idPago",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiUniRoom.Controllers.PagosController",
+    "Method": "ForzarPagoCompleto",
+    "RelativePath": "api/Pagos/ForzarPagoCompleto",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdPago",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "TotalPago",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiUniRoom.Controllers.PagosController",
+    "Method": "InsertarAbono",
+    "RelativePath": "api/Pagos/InsertarAbono",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "abono",
+        "Type": "ApiUniRoom.Models.Abono",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiUniRoom.Controllers.PagosController",
+    "Method": "PutUpdatePension",
+    "RelativePath": "api/Pagos/InsertarPagoFlexible",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pagos",
+        "Type": "ApiUniRoom.Models.Pagos",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiUniRoom.Controllers.PagosController",
+    "Method": "ObtenerAbonosPorabono",
+    "RelativePath": "api/Pagos/ObtenerAbonosPorPago/{idPago}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idPago",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiUniRoom.Controllers.PagosController",
+    "Method": "ObtenerAbonosPorPension",
+    "RelativePath": "api/Pagos/ObtenerPagosPension/{idPension}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idPension",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiUniRoom.Controllers.PagosController",
+    "Method": "ReabrirPagoAAbonos",
+    "RelativePath": "api/Pagos/ReabrirPagoAAbonos",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "abono",
+        "Type": "ApiUniRoom.Models.ReabrirAbono",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiUniRoom.Controllers.PensionPropietarioController",
+    "Method": "ActualizarCuarto",
+    "RelativePath": "api/PensionPropietario/ActualizarCuarto",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cuarto",
+        "Type": "ApiUniRoom.Models.CuartoUpdateRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiUniRoom.Controllers.PensionPropietarioController",
+    "Method": "PutUpdatePension",
+    "RelativePath": "api/PensionPropietario/ActualizarPension",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pensionU",
+        "Type": "ApiUniRoom.Models.UpdatePensi\u00F3n",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiUniRoom.Controllers.PensionPropietarioController",
+    "Method": "PutUpdatePensionServices",
+    "RelativePath": "api/PensionPropietario/ActualizarServiciosP",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "services",
+        "Type": "ApiUniRoom.Models.ServiciosPension",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiUniRoom.Controllers.PensionPropietarioController",
+    "Method": "EliminarCuarto",
+    "RelativePath": "api/PensionPropietario/EliminarCuarto/{idCuarto}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCuarto",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiUniRoom.Controllers.PensionPropietarioController",
+    "Method": "EliminarFoto",
+    "RelativePath": "api/PensionPropietario/EliminarFoto/{idFoto}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idFoto",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiUniRoom.Controllers.PensionPropietarioController",
+    "Method": "DeletePension",
+    "RelativePath": "api/PensionPropietario/EliminarPension",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idPension",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiUniRoom.Controllers.PensionPropietarioController",
+    "Method": "InsertarCuarto",
+    "RelativePath": "api/PensionPropietario/InsertarCuarto",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cuarto",
+        "Type": "ApiUniRoom.Models.CuartoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiUniRoom.Controllers.PensionPropietarioController",
+    "Method": "PostInsertarPension",
+    "RelativePath": "api/PensionPropietario/InsertarPension",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pension",
+        "Type": "ApiUniRoom.Models.Pension",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ApiUniRoom.Models.PensionResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ApiUniRoom.Controllers.PensionPropietarioController",
+    "Method": "ObtenerPensionesDelPropietario",
+    "RelativePath": "api/PensionPropietario/MisPensiones/{idPropietario}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idPropietario",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiUniRoom.Controllers.PensionPropietarioController",
+    "Method": "SubirFoto",
+    "RelativePath": "api/PensionPropietario/SubirFoto",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "foto",
+        "Type": "ApiUniRoom.Models.FotoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiUniRoom.Controllers.PerfilsController",
+    "Method": "ActualizarContrasena",
+    "RelativePath": "api/Perfils/ActualizarContrasena",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "ApiUniRoom.Models.ActualizarContrasenaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiUniRoom.Controllers.PerfilsController",
+    "Method": "ActualizarCorreo",
+    "RelativePath": "api/Perfils/ActualizarCorreo",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "ApiUniRoom.Models.ActualizarCorreoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiUniRoom.Controllers.PerfilsController",
+    "Method": "ActualizarDocumento",
+    "RelativePath": "api/Perfils/ActualizarDocumento",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "ApiUniRoom.Models.ActualizarDocumentoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiUniRoom.Controllers.PerfilsController",
+    "Method": "ActualizarUsuario",
+    "RelativePath": "api/Perfils/ActualizarPerfil",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "ApiUniRoom.Models.ActualizarUsuarioDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiUniRoom.Controllers.PerfilsController",
+    "Method": "InformacionPerfil",
+    "RelativePath": "api/Perfils/PerfilUser",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idUser",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiUniRoom.Controllers.PerfilsController",
+    "Method": "EliminarCuenta",
+    "RelativePath": "api/Perfils/usuario/EliminarCuenta/{idUsuario}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idUsuario",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiUniRoom.Controllers.PerfilsController",
+    "Method": "InsertarDocumento",
+    "RelativePath": "api/Perfils/usuario/InsertarDocumento",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ApiUniRoom.Models.Documento",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiUniRoom.Controllers.ReservaController",
+    "Method": "GetHistorial",
+    "RelativePath": "api/Reserva/cliente/{idCliente}/HistorialPensiones",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCliente",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiUniRoom.Controllers.ReservaController",
+    "Method": "ObtenerPensionActual",
+    "RelativePath": "api/Reserva/Cliente/{idCliente}/PensionActual",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCliente",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiUniRoom.Controllers.ReservaController",
+    "Method": "ObtenerReservasPendientes",
+    "RelativePath": "api/Reserva/cliente/{idCliente}/ReservasPendientes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCliente",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiUniRoom.Controllers.ReservaController",
+    "Method": "PostReservar",
+    "RelativePath": "api/Reserva/cliente/RealizarReserva",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "reservas",
+        "Type": "ApiUniRoom.Models.Reserva",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiUniRoom.Controllers.ReservaController",
+    "Method": "CambiarEstadoReserva",
+    "RelativePath": "api/Reserva/propietario/CambiarEstadoReserva",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ApiUniRoom.Models.AlojamientoEstadoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiUniRoom.Controllers.ReservaController",
+    "Method": "HistorialdeClientesporPension",
+    "RelativePath": "api/Reserva/propietario/HistorialClientesPension",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idPension",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiUniRoom.Controllers.ReservaController",
+    "Method": "ObtenerReservasRecibidasPorPension",
+    "RelativePath": "api/Reserva/propietario/ReservasPendientePension/{idPension}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idPension",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
