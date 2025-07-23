@@ -55,7 +55,7 @@ if (app.Environment.IsDevelopment() || app.Environment.IsProduction()) // O usa 
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 app.UseRouting(); // ✅ NECESARIO para SignalR
 
 app.UseAuthentication();
