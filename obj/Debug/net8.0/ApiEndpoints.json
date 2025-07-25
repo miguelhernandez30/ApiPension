@@ -1,55 +1,13 @@
 [
   {
-    "ContainingType": "ApiUniRoom.Controllers.AccessController",
-    "Method": "Login",
-    "RelativePath": "api/Access/login",
-    "HttpMethod": "POST",
+    "ContainingType": "ApiUniRoom.Controllers.RootController",
+    "Method": "Get",
+    "RelativePath": "",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "request",
-        "Type": "ApiUniRoom.Models.LoginController",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "ApiUniRoom.Models.LoginResponse",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "ApiUniRoom.Controllers.AccessController",
-    "Method": "RegistrarUsuario",
-    "RelativePath": "api/Access/registro",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "request",
-        "Type": "ApiUniRoom.Models.RegistroRequest",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "ApiUniRoom.Models.RegistroResponse",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "Parameters": [],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "ApiUniRoom.Controllers.ComentariosController",
@@ -651,5 +609,57 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiUniRoom.Controllers.AccessController",
+    "Method": "Login",
+    "RelativePath": "login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ApiUniRoom.Models.LoginController",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ApiUniRoom.Models.LoginResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ApiUniRoom.Controllers.AccessController",
+    "Method": "RegistrarUsuario",
+    "RelativePath": "registro",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ApiUniRoom.Models.RegistroRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ApiUniRoom.Models.RegistroResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]

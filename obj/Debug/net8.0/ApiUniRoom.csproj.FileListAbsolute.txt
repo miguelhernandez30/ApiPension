@@ -267,3 +267,4 @@ C:\Users\USUARIO\source\repos\ApiUniRoom\ApiUniRoom\bin\Debug\net8.0\Microsoft.A
 C:\Users\USUARIO\source\repos\ApiUniRoom\ApiUniRoom\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\USUARIO\source\repos\ApiUniRoom\ApiUniRoom\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\USUARIO\source\repos\ApiUniRoom\ApiUniRoom\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\USUARIO\source\repos\ApiUniRoom\ApiUniRoom\obj\Debug\net8.0\ApiUniRoom.sourcelink.json

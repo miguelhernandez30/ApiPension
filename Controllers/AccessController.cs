@@ -12,7 +12,7 @@ using System.Runtime.ConstrainedExecution;
 
 namespace ApiUniRoom.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("/")]
     [AllowAnonymous]
     [ApiController]
     public class AccessController : ControllerBase
