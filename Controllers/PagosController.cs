@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 namespace ApiUniRoom.Controllers
 {
     [Route("api/[controller]")]
-    [Authorize(Roles = "Propietario, Cliente")]
+  //  [Authorize(Roles = "Propietario, Cliente")]
     [ApiController]
     public class PagosController : ControllerBase
     {
