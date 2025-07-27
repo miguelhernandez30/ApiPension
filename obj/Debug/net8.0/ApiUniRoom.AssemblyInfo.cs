@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApiUniRoom")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5e132e7b8e2f9e04e2b09c9fabcc1c14e8d11877")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+14c4f3ce8a5e8d0ff3377027e35470229af27335")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiUniRoom")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiUniRoom")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -611,6 +611,26 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "ApiUniRoom.Controllers.RootController",
+    "Method": "TestDb",
+    "RelativePath": "db",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiUniRoom.Controllers.RootController",
+    "Method": "GetEnv",
+    "RelativePath": "env",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ApiUniRoom.Controllers.AccessController",
     "Method": "Login",
     "RelativePath": "login",

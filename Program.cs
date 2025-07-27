@@ -2,7 +2,6 @@
 using ApiUniRoom.Custom;
 using ApiUniRoom.SignalHub;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
@@ -49,24 +48,6 @@ builder.Services.AddAuthentication(options =>
 
 var app = builder.Build();
 
-using (var scope = app.Services.CreateScope())
-{
-    var db = scope.ServiceProvider.GetRequiredService<ContextDB>();
-
-    try
-    {
-        if (!db.Database.CanConnect())
-        {
-            Console.WriteLine("❌ No se puede conectar a la base de datos.");
-        }
-    }
-    catch (Exception ex)
-    {
-        Console.WriteLine($"❌ Error al conectar con la base de datos: {ex.Message}");
-    }
-}
-
-
 // Middleware
 if (app.Environment.IsDevelopment() || app.Environment.IsProduction()) // O usa variable ENV personalizada
 {
@@ -74,23 +55,6 @@ if (app.Environment.IsDevelopment() || app.Environment.IsProduction()) // O usa 
     app.UseSwaggerUI();
 }
 
-app.UseExceptionHandler(errorApp =>
-{
-    errorApp.Run(async context =>
-    {
-        context.Response.StatusCode = 500;
-        context.Response.ContentType = "application/json";
-
-        var error = context.Features.Get<IExceptionHandlerFeature>();
-        if (error != null)
-        {
-            var ex = error.Error;
-            await context.Response.WriteAsync(
-                $"{{\"error\":\"{ex.Message}\"}}"
-            );
-        }
-    });
-});
 
 //app.UseHttpsRedirection();
 app.UseRouting(); // ✅ NECESARIO para SignalR
